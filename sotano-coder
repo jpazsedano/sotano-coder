@@ -1,0 +1,13 @@
+#!/bin/sh
+
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+
+echo -n "Iniciando cargadores"; sleep 0.5; echo "...............[${GREEN}ok${NC}]"
+echo -n "Acceso a base de datos"; sleep 0.5; echo ".............[${GREEN}ok${NC}]"
+echo -n "Cargando lenguajes"; sleep 0.5; echo ".................[${GREEN}ok${NC}]"
+echo -n "Iniciando librerías"; sleep 0.8; echo "................[${GREEN}ok${NC}]"
+echo -n "Conectando a la red de sótanos"; sleep 0.7; echo ".....[${GREEN}ok${NC}]"
+echo -n "Cargando vídeo"; sleep 1.0; echo ".....................[${GREEN}ok${NC}]"
+sleep 1
