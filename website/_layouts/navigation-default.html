@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+    <body>
+        <nav class="flex-container">
+            <div class="nav-logo"><a href="/">Sótano Coder</a></div>
+            <div class="nav-menu">
+                <div class="nav-menu-wrapper">
+                    <ul>
+                        <li {% if page.url == "/" %} class="active" {% endif %}>
+                            <a href="/">Inicio</a>
+                        </li>
+                        {% for section in site.sections %}
+                        <li {% if page.url == section.page_url %} class="active" {% endif %}>
+                            <a href="{{ section.page_url }}"> {{ section.name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-support"><a href="/apoyanos.html">Apóyanos</a></div>
+        </nav>
+        <div class="content-wrap">
+            {{ content }}
+        </div>
+    </body>
+</html>

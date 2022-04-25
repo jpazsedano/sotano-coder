@@ -1,0 +1,55 @@
+
+.content-wrap {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+@media(max-width: 1040px) {
+    .content-wrap {
+        margin: 20px 10px;
+    }
+}
+
+.content-container {
+    background-color: #101010;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.banner-img {
+    max-width: 100%;
+    margin: 1em 0; 
+}
+
+.img-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-element div {
+    margin: 0 1em;
+}
+
+.img-element .text-element {
+    max-width: 35em;
+}
+
+.img-wrapper img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.flex-priority {
+    order: -1;
+}
+.wrap-regular {
+    flex-wrap: wrap;
+}
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.card h1 {
+    text-align: center;
+}

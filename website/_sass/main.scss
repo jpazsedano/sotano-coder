@@ -1,7 +1,16 @@
-h1 {
-    text-align: center;
-}
-
 body {
     margin: 0;
+    background-color: $ligthbg;
+
+    font-family: monospace;
+    color: $textcolor;
+}
+
+body a {
+    color: $textcolor;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: underline;
 }
