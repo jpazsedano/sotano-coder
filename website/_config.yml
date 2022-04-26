@@ -1,3 +1,4 @@
 collections:
-  sections:
-  landpage_elems:
+  - landpage_elems
+  - programming_course
+  - deepening_course

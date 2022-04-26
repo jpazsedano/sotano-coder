@@ -1,0 +1,6 @@
+- name: Cursos
+  page_url: /cursos/
+- name: Ejemplos y proyectos
+  page_url: /ejemplos/
+- name: Ejercicios
+  page_url: /ejercicios/

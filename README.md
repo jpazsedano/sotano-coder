@@ -14,3 +14,18 @@ en cada uno de ellos se especifica en su `README.md`.
 
 En la carpeta `doc` podrás encontrar las lecciones en formato escrito así como documentación sobre el código
 disponible en el repositorio.
+
+## Organización del código del sitio web
+
+Para organizar el sitio web, todas las páginas tendrán la barra de navegación. Habrá una
+serie de páginas estáticas que mostrarán una landing page, una página para cursos,
+ejercicios y ejemplos y proyectos.
+
+La landing page estará en index.html (porque es la principal), pero el resto tendrá cada
+una su carpeta en la que estará la página principal de resumen y las páginas de 
+listado de contenido. El contenido estará organizado en colecciones y no posts, ya que
+nos interesa que cada curso sea independiente de los demás y de los ejercicios, por
+ejemplo.
+
+Para la visualización de cada elemento en detalle, se utilizará la URL generada por
+el elemento de la colección. Investigar a ver cómo usar eso.

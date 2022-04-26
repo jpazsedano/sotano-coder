@@ -14,7 +14,7 @@
                         <li {% if page.url == "/" %} class="active" {% endif %}>
                             <a href="/">Inicio</a>
                         </li>
-                        {% for section in site.sections %}
+                        {% for section in site.data.navigation %}
                         <li {% if page.url == section.page_url %} class="active" {% endif %}>
                             <a href="{{ section.page_url }}"> {{ section.name }}</a>
                         </li>

@@ -50,6 +50,26 @@
     flex-wrap: wrap-reverse;
 }
 
+.two-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-columns div {
+    flex-grow: 1;
+    width: 45%;
+    min-width: 25em;
+}
+
+.card {
+    border: 3px solid $HLDetail;
+    background-color: $mediumbg;
+    margin: 5px 5px;
+    padding: 15px;
+}
+
 .card h1 {
     text-align: center;
 }

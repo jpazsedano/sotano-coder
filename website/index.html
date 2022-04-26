@@ -5,7 +5,8 @@ title: "Sótano coder"
 <img src="/assets/images/banner_narrow.png" class="banner-img" alt="Sótano Coder">
 <div class="content-container">
     {% for elem in site.landpage_elems %}
-    <div class="img-element {% if forloop.index0 == 0 %}wrap-reverse{% else %}wrap-regular{% endif %}">
+    {% assign odd = forloop.index0 | modulo: 2 %}
+    <div class="img-element {% if odd == 0 %}wrap-reverse{% else %}wrap-regular{% endif %}">
         <div class="text-element">
             {% if elem.page_url %}
             <a href="{{ elem.page_url }}">
@@ -16,7 +17,7 @@ title: "Sótano coder"
             {% endif %}
             <div>{{ elem.content | markdownify }}</div>
         </div>
-        <div class="img-wrapper {% if forloop.index0 == 1 %}flex-priority{% endif %}">
+        <div class="img-wrapper {% if odd == 1 %}flex-priority{% endif %}">
             {% if elem.page_url %}
             <a href="{{ elem.page_url }}">
                 <img src="{{ elem.img }}" alt="{{ elem.img_alt }}">
